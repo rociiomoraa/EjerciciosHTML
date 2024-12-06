@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">DATOS DE ALUMNOS-CONTINUACIÓN</h2>
+
+    <form style="width: 70%; margin: auto; border: 1px solid black; padding: 10px;">
+        <table align="center" cellpadding="8" cellspacing="5" width="100%">
+            
+            <tr>
+                <td colspan="3" align="center" style="color: red; font-size: 1.2em;">
+                    <strong>Teclea más datos</strong>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="3"><label>Teclea fecha de nacimiento</label></td>
+            </tr>
+            
+            <tr>
+                <td>Teclea día de nacimiento: <input type="number" name="dia_nacimiento" min="1" max="31"></td>
+                <td>Selecciona mes de nacimiento: 
+                    <select name="mes_nacimiento">
+                        <option>Enero</option>
+                        <option>Febrero</option>
+                        <option>Marzo</option>
+                        <option>Abril</option>
+                        <option>Mayo</option>
+                        <option>Junio</option>
+                        <option>Julio</option>
+                        <option>Agosto</option>
+                        <option>Septiembre</option>
+                        <option>Octubre</option>
+                        <option>Noviembre</option>
+                        <option>Diciembre</option>
+                    </select>
+                </td>
+                <td>Teclea año de nacimiento: <input type="number" name="anio_nacimiento" min="1900" max="2023"></td>
+            </tr>
+    
+            <tr>
+                <td colspan="3">
+                    Selecciona el curso: 
+                    <select name="curso">
+                        <option>Primero SMR</option>
+                        <option>Segundo SMR-A</option>
+                        <option>Segundo SMR-B</option>
+                        <option>Primero BACH</option>
+                        <option>Segundo BACH</option>
+                    </select>
+                </td>
+            </tr>
+    
+            <tr>
+                <td colspan="3">Elige 3 materias optativas:</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="materia" value="Ingles"> Inglés</td>
+                <td><input type="checkbox" name="materia" value="Frances"> Francés</td>
+                <td><input type="checkbox" name="materia" value="Astronomia"> Astronomía</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="materia" value="Historia"> Historia</td>
+                <td><input type="checkbox" name="materia" value="Paginas Web"> Páginas Web</td>
+                <td><input type="checkbox" name="materia" value="Redes"> Redes</td>
+            </tr>
+    
+            <tr>
+                <td colspan="3">Selecciona el turno:</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="turno" value="Mañana"> Mañana</td>
+                <td><input type="radio" name="turno" value="Tarde"> Tarde</td>
+                <td><input type="radio" name="turno" value="Nocturno"> Nocturno</td>
+            </tr>
+    
+            <tr>
+                <td colspan="3" align="center">
+                    <input type="submit" value="Enviar datos" name="enviar">
+                    <input type="reset" value="Limpiar datos" name="limpiar">
+                    <input type="button" value="Cerrar ventana" onclick="window.close();">
+                    <input type="button" value="Formulario anterior" onclick="window.open('ejercicio5.html');">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

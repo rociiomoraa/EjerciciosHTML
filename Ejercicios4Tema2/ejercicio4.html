@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INDUSTRIAS STARFUERTE</h1>
+    <table width="800"><tr><td>
+        <p>
+            <form action="manejador.html" method="post">
+                <fieldset>
+                    <legend>FORMULARIO DE PEDIDO</legend>
+                    <table width="600" cellspadding="5">
+                        <tr><td><strong> >Paso 1. Identificación</strong></td></tr>
+                        <tr>
+                            <td><fieldset>
+                                <legend>Datos del cliente</legend><br>
+                                <label for="email">Correo electrónico</label>
+                                <input type="text" id="email" size="20" maxlength="40">
+                                <p><label for="pass">Contraseña</label>
+                                <input type="password" id="pass" size="10" maxlength="30"></p>
+                                (Longitud mínima 6 caracteres)
+                            </fieldset></td>
+                            <td><fieldset>
+                                <legend>Tipo de cliente</legend><br>
+                                <input type="radio" id="particular" name="tipo" chacked>
+                                <label for="particular">Particular</label><br>
+                                <input type="radio" id="asociacion" name="tipo">
+                                <label for="asociacion">Asociación</label><br>
+                                <input type="radio" id="empresa" name="tipo">
+                                <label for="empresa">Empresa</label><br>
+                            </fieldset></td>
+                        </tr>
+                    </table>
+                    <table width="780" cellpadding="5">
+                        <tr><td><strong> >Paso 2. Pedido</strong></td></tr>
+                        <tr>
+                            <td><fieldset>
+                                <legend>Datos del Producto</legend>
+                                Producto<br>
+                                <select id="producto" name="producto" multiple="si" size="8">
+                                    <optgroup label="Armaduras">
+                                        <option value="AR001" selected="selected">AR001 Oro Reluciente</option>
+                                        <option value="AR002">AR002 Plata Pulida</option>
+                                        <option value="AR003">AR003 Bronce Reforzado</option>
+                                    </optgroup>
+                                    <optgroup label="Extras">
+                                    <option value="EX001" selected="selected">EX001 Escudo</option>
+                                    <option value="EX002">EX002 Invisibilidad</option>
+                                </optgroup>
+                                </select>
+                            </fieldset></td>
+                            <td><fieldset>
+                                <legend>Información de interés</legend>
+                                Comentarios <br>
+                                <textarea rows="6" cols="60">Escriba aquí sus comentarios</textarea>
+                                <br><input type="checkbox" id="publi" value="si" checked>
+                                <label for="publi">Acepto recibir información publicitaria</label>
+                            </fieldset></td>
+                        </tr>
+                    </table>
+                    <table width="780" cellspadding="5">
+                        <tr>
+                            <td><fieldset>
+                                <legend>Datos de envío</legend>
+                                <label for="dire">Dirección</label>
+                                <input type="text" id="dire" size="40">
+                                <p><label for="ciudad">Ciudad</label>
+                                <input type="tex" id="ciudad" size="20"></p>
+                                <label for="cp">Código postal</label>
+                                <input type="text" id="cp" size="5">
+                            </fieldset></td>
+                            <td><fieldset>
+                                <legend>Datos Bancarios</legend>
+                                <label for="entidad">Nombre de la Entidad</label>
+                                <input type="text" id="entidad" size="20">
+                                <p><label for="cuenta">N&ordm; de cuenta</label> 
+                                <input type="text" id="entidad" size="20"></p>
+                            </fieldset></td>
+                        </tr>
+                        <tr>
+                            <td><button type="submit">ENVIAR<br>PEDIDO</button></td>
+                            <td><button type="reset">RESET</button></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </td></tr></table>
+</body>
+</html>
